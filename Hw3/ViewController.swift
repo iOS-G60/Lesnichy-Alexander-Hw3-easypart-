@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 
         print("Collections Easy. Задание 2.")// Создать 2 массива со значениями типа Int. Сделать соединение данных массивов. Результат вывести в консоль.
 
-        arrayDigits(a: 1, b: 2, c: 3, d: 4, e: 5, f: 6)
+        connectArs()
 
         print("===================================================")
 
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         print("Collections Easy. Задание 4.")// Создать массив с любыми значениями типа строка. Создать метод который будет принимать как аргумент массив. Метод должен возвращать массив который состоит из первого и последнего элемента массива, который был параметром
 
         let arrayStrElements = ["first", "second", "third", "last"]
-        firstAndLastElementsOfArray(Array: arrayStrElements)
+        firstAndLastElementsOfArray(arr: arrayStrElements)
 
         print("===================================================")
 
@@ -135,11 +135,11 @@ class ViewController: UIViewController {
     //    Задание2
     //    Создать 2 массива со значениями типа Int. Сделать соединение данных массивов. Результат вывести в консоль.
 
-    func arrayDigits(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int) {
-        let digits = [a,b,c]
-        let numbers = [d,e,f]
-        let sum = digits + numbers
-        print(sum)
+    func connectArs() {
+        let arr1: [Int] = [1,2,3]
+        let arr2: [Int] = [4,5,6]
+        let resultArr: [Int] = arr1 + arr2
+        print(resultArr)
     }
 
     //    Задание3
@@ -154,8 +154,8 @@ class ViewController: UIViewController {
     //    Задание4
     //    Создать массив с любыми значениями типа строка. Создать метод который будет принимать как аргумент массив. Метод должен возвращать массив который состоит из первого и последнего элемента массива, который был параметром
 
-    func firstAndLastElementsOfArray(Array: [String]) {
-        print(Array.first ?? "", Array.last ?? "")
+    func firstAndLastElementsOfArray(arr: [String]) {
+        print(arr.first ?? "", arr.last ?? "")
     }
 
     //Задание5
